@@ -29,8 +29,8 @@ const Header = props => {
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/Topics" className="nav-link">
-                Topics
+              <Link to="/addTopic" className="nav-link">
+                AddTopics
               </Link>
             </li>
           </ul>

@@ -1,5 +1,10 @@
 .dashboard-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
+  flex-direction: column;
+}
+.topic-list-understand {
+  padding: 0px;
 }

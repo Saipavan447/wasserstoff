@@ -1,3 +1,41 @@
+.topic-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.dashboard-page {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0a122c;
+}
+.button {
+  padding: 10px 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 'Roboto';
+  cursor: pointer;
+}
+.understand {
+  background-color: #5cb85c;
+}
+.some-what-understand {
+  background-color: #f0ad4e;
+}
+.not-clear {
+  background-color: #5bc0de;
+}
+.what-rubbish {
+  background-color: #d9534f;
+}
 .trigger-button {
   background-color: #0a122c;
   color: #ffffff;
@@ -12,9 +50,9 @@
 }
 .add-topic-container {
   display: flex;
+  height: 500px;
   flex-direction: column;
   align-items: center;
-  height: 500px;
 }
 .add-topic-heading {
   margin: 0px;

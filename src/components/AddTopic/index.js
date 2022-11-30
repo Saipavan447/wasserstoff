@@ -1,7 +1,7 @@
-import Popup from 'reactjs-popup'
 import axios from 'axios'
-import 'reactjs-popup/dist/index.css'
-
+import {NavLink} from 'react-router-dom'
+import {AiOutlineLeft} from 'react-icons/ai'
+import Topics from '../Topics'
 import './index.css'
 
 const AddTopic = () => {
@@ -9,6 +9,7 @@ const AddTopic = () => {
     event.preventDefault()
     const name = event.target.name.value
     const content = event.target.content.value
+
     const data = {name, content}
 
     axios
@@ -22,16 +23,47 @@ const AddTopic = () => {
       })
   }
   return (
-    <div className="popup-container">
-      <Popup
-        contentStyle={{width: '450px'}}
-        modal
-        trigger={
-          <button className="trigger-button" type="button">
-            AddTopic
+    <div>
+      <div className="topic-container">
+        <NavLink className="dashboard-page" to="/">
+          <AiOutlineLeft />
+          DashBoard
+        </NavLink>
+        <div className="buttons-container">
+          <h1>Any call action</h1>
+          <button
+            type="button"
+            value="understand"
+            id="understand"
+            className="button understand"
+          >
+            understand
           </button>
-        }
-      >
+          <button
+            type="button"
+            value="somewhatUnderstood"
+            id="somewhatUnderstood"
+            className="button some-what-understand"
+          >
+            somewhat understood
+          </button>
+          <button
+            type="button"
+            value="notClear"
+            id="notClear"
+            className="button not-clear"
+          >
+            Not clear
+          </button>
+          <button
+            type="button"
+            value="whatRubbish"
+            id="whatRubbish"
+            className="button what-rubbish"
+          >
+            What rubbish
+          </button>
+        </div>
         <form
           className="add-topic-container"
           id="contactForm"
@@ -67,7 +99,8 @@ const AddTopic = () => {
             Add
           </button>
         </form>
-      </Popup>
+      </div>
+      <Topics />
     </div>
   )
 }

@@ -1,0 +1,20 @@
+.topic-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: 50%;
+}
+
+.topic-content {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.topic-description {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-size: 15px;
+}

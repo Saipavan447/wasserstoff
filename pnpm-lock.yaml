@@ -20,6 +20,7 @@ specifiers:
   react: 17.0.1
   react-dom: 17.0.1
   react-highlight-pop: 1.0.2
+  react-icons: 4.7.1
   react-router-dom: '5.2'
   react-scripts: 4.0.3
   reactjs-popup: 2.0.5
@@ -38,6 +39,7 @@ dependencies:
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-highlight-pop: 1.0.2_react@17.0.1
+  react-icons: 4.7.1_react@17.0.1
   react-router-dom: 5.2.1_react@17.0.1
   reactjs-popup: 2.0.5_react-dom@17.0.1+react@17.0.1
   render-fragment: 0.1.1_react@17.0.1
@@ -3955,7 +3957,7 @@ packages:
   /axios/1.2.0:
     resolution: {integrity: sha512-zT7wZyNYu3N5Bu0wuZ6QccIf93Qk1eV8LOewxgjOZFd2DenOs98cJ7+Y6703d0wkaXGY6/nZd4EweJaHz9uzQw==}
     dependencies:
-      follow-redirects: 1.15.2_debug@4.3.4
+      follow-redirects: 1.15.2
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -6716,7 +6718,7 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.15.2_debug@4.3.4:
+  /follow-redirects/1.15.2:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -6724,8 +6726,6 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
-    dependencies:
-      debug: 4.3.4_supports-color@6.1.0
 
   /for-in/1.0.2:
     resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
@@ -7299,7 +7299,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.2_debug@4.3.4
+      follow-redirects: 1.15.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -10940,6 +10940,14 @@ packages:
     resolution: {integrity: sha512-CfBUWJuz5dMbscpCHTzjoKgbTBszucYnW8bf8hbGDPClks+XmP1okzXSjNO+0E0e+rNaQj1rOpoRwIwRgN3KhQ==}
     peerDependencies:
       react: 16.x
+    dependencies:
+      react: 17.0.1
+    dev: false
+
+  /react-icons/4.7.1_react@17.0.1:
+    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
+    peerDependencies:
+      react: '*'
     dependencies:
       react: 17.0.1
     dev: false

@@ -2,7 +2,7 @@ import {Component} from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Login from './components/Login'
 import DashBoard from './components/DashBoard'
-import Topics from './components/Topics'
+import AddTopic from './components/AddTopic'
 import ProtectedRoute from './components/ProtectedRoute'
 
 import './App.css'
@@ -13,7 +13,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/login" component={Login} />
         <ProtectedRoute exact path="/" component={DashBoard} />
-        <Route exact path="/topics" component={Topics} />
+        <Route exact path="/addTopic" component={AddTopic} />
       </Switch>
     )
   }
